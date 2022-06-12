@@ -1,0 +1,25 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "first frontend project on hexlet ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "module",
+    "url": "git+https://github.com/InnaMeleshko/frontend-project-lvl1.git"
+  },
+  "author": "Inna Meleshko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InnaMeleshko/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/InnaMeleshko/frontend-project-lvl1#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
+}
