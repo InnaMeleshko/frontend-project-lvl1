@@ -1,4 +1,7 @@
 #!/usr/bin/env node
-import sayHello from '../src/cli.js';
+import sayHello from './cli.js';
+
+// import answerQuestion from './brain-even';
 
 sayHello();
+// answerQuestion();
