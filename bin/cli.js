@@ -6,6 +6,4 @@ const sayHello = () => {
   console.log(`Hello, ${name}!`);
   return name;
 };
-
-
 export default sayHello;
