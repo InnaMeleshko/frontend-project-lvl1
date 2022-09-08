@@ -1,26 +1,16 @@
-import readlineSync from 'readline-sync';
-import Hello from './cli.js';
+// import readlineSync from 'readline-sync';
+import startGame from '../src/index.js';
+import { getRandomNumber, isEven } from '../src/utils.js';
+
+// const isEven = (number) => number % 2 === 0;
 
 const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
-const isEven = (number) => number % 2 === 0;
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-const startGame = () => {
-  const userName = Hello();
-  console.log(gameRule);
-  const roundsCount = 3;
-  for (let i = 1; i <= roundsCount; i += 1) {
-    const randomNumber = getRandomNumber(1, 300);
-    console.log(`Question: ${randomNumber}`);
-    const userAnswer = readlineSync.question();
-    console.log(`Your answer: ${userAnswer}`);
-    const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
-    console.log('Correct!');
-    if (userAnswer !== correctAnswer) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${userName}!`);
-    }
-  }
-  console.log(`Congratulations, ${userName}!`);
+
+const askQuestion = () => {
+  const question = getRandomNumber(1, 100);
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
+
+  return [question, correctAnswer];
 };
-export default getRandomNumber;
-startGame();
+
+startGame(gameRule, askQuestion);

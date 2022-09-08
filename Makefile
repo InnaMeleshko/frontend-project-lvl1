@@ -4,8 +4,11 @@ install: #установка пакета npm
 make brain-games: 
 						node bin/brain-games.js
 
-make brain-even: #запуск игры
+brain-even: #запуск игры
 						node bin/brain-even.js
+
+brain-calc: #запуск калькулятора 
+					node bin/brain-calc.js
 
 publish:
 			npm publish --dry-run

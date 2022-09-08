@@ -1,21 +1,30 @@
-import readlineSync from 'readline-sync';
-import Hello from './cli.js';
+import startGame from '../src/index.js';
+import { getRandomNumber } from '../src/utils.js';
 
-//expalain rules to gamer
 const gameRule = 'What is the result of the expression?';
-//function which check if the number is even 
-
-//generate random number 
-
-export const getRandomNUmber = (min, max) => min + Math.floor(Math.random() * max);
-//generate random operator 
-
-export const getRandomElement = () => 
-console.log(gameRule);
 
 
-const firstNumber = getRandomNumber(1, 300);
-const secondNumber = getRandomNumber(1, 300);
-const startCalc = () => {
+const brainCalc = (firstNum, secondNum, finalRandomSymbol) => {
+  switch (finalRandomSymbol) {
+    case '-':
+      return (firstNum - secondNum);
+    case '+':
+      return (firstNum + secondNum);
+    case '*':
+      return (firstNum * secondNum);
+    default:
+      return null;
+  }
 };
-startCalc();
+
+const gameEngine = () => {
+  const symbols = ['+', '-', '*'];
+  const firstNum = getRandomNumber(1, 10);
+  const secondNum = getRandomNumber(1, 10);
+  const finalRandomSymbol = symbols[getRandomNumber(0, symbols.length - 1)];
+  const correctAnswer = String(brainCalc(firstNum, secondNum, finalRandomSymbol));
+  const question = `${firstNum} ${finalRandomSymbol} ${secondNum}`;
+  return [question, correctAnswer];
+};
+
+startGame(gameRule, gameEngine);
