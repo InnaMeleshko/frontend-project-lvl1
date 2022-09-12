@@ -2,8 +2,6 @@ import startGame from '../src/index.js';
 import { getRandomNumber } from '../src/utils.js';
 
 const gameRule = 'What is the result of the expression?';
-
-
 const brainCalc = (firstNum, secondNum, finalRandomSymbol) => {
   switch (finalRandomSymbol) {
     case '-':
