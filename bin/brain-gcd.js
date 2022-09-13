@@ -1,5 +1,6 @@
 import startGame from '../src/index.js';
 import { getRandomNumber } from '../src/utils.js';
+
 const gameRule = 'Find the greatest common divisor of given numbers.';
 const finalGreatestDevisor = (firstNum, secondNum) => {
   if (firstNum === 0) {
