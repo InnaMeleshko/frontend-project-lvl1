@@ -7,6 +7,7 @@ make brain-games:
 brain-even: #запуск игры
 						node bin/brain-even.js
 
+
 brain-calc: #запуск калькулятора 
 					node bin/brain-calc.js
 
@@ -15,5 +16,8 @@ publish:
 
 make lint:
 				npx eslint .
+
+brain-prime:
+				node bin/brain-prime.js
 
 

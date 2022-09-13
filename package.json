@@ -18,6 +18,7 @@
   "homepage": "https://github.com/InnaMeleshko/frontend-project-lvl1#readme",
   "dependencies": {
     "http-server": "^14.1.1",
+    "latest-version": "^7.0.0",
     "readline-sync": "^1.4.10"
   },
   "bin": {
@@ -25,9 +26,8 @@
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
     "brain-gcd": "bin/brain-gcd.js",
-    "brain-progression": "bin/brain-progression.js"
-
-
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
   },
   "devDependencies": {
     "eslint": "^8.17.0",

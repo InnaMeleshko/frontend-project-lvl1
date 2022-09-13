@@ -6,7 +6,6 @@ const roundsCount = 3;
 const startGame = (gameRule, askQuestion) => {
   const userName = sayHello();
   console.log(gameRule);
-
   for (let i = 1; i <= roundsCount; i += 1) {
     const [question, correctAnswer] = askQuestion();
     console.log(`Question: ${question}`);
