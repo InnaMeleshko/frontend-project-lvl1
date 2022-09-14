@@ -1,4 +1,5 @@
-// import readlineSync from 'readline-sync';
+#!/usr/bin/env node
+
 import startGame from '../src/index.js';
 import { getRandomNumber, isEven } from '../src/utils.js';
 
