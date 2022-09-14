@@ -2,8 +2,6 @@
 import startGame from '../src/index.js';
 import { getRandomNumber, isEven } from '../src/utils.js';
 
-// const isEven = (number) => number % 2 === 0;
-
 const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const askQuestion = () => {

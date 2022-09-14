@@ -10,12 +10,6 @@ const startGame = (gameRule, askQuestion) => {
     const [question, correctAnswer] = askQuestion();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    // const randomNumber = getRandomNumber(1, 300);
-    // console.log(`Question: ${randomNumber}`);
-    // const userAnswer = readlineSync.question();
-    // console.log(`Your answer: ${userAnswer}`);
-    // const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
-    // console.log('Correct!');
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
