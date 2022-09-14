@@ -14,7 +14,7 @@ const makeProgression = (firstNumber, step, length) => {
   return result;
 };
 const makeProgressionWithMissingElement = () => {
-  const length = getRandomNumber(1, 15);
+  const length = getRandomNumber(6, 15);
   const firstNumber = getRandomNumber(1, 40);
   const step = getRandomNumber(1, 5);
   const progression = makeProgression(firstNumber, step, length);
