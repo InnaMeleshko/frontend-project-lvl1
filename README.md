@@ -1,3 +1,5 @@
+Managing modules, importing functions, working on architecture. Setting up the working environment (operating system, editor, linters), connecting third-party libraries.
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/InnaMeleshko/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/InnaMeleshko/frontend-project-lvl1/actions)
 
